@@ -19,7 +19,7 @@ const Banner = () => {
           viewport={{once:false, amount:0.7}}
           className="text-[55px] leading-[0.8] lg:text-[110px] m-5 font-monton uppercase"
         >
-          aakriti
+          pradul p
         </motion.h1>
         <motion.div
           variants={fadeIn('up', 0.3)}
@@ -28,9 +28,9 @@ const Banner = () => {
           viewport={{once:false, amount:0.7}}
           className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
         >
-          <span className="text-white mr-4 m-5"></span>
+          <span className="text-white mr-4 m-5">i am a </span>
           <TypeAnimation
-            sequence={["28 APRIL 2023 ", 2000, "29 APRIL 2023", 2000]}
+            sequence={["civil engineer", 2000, "web developer", 2000]}
             speed={50}
             className="text-accent"
             wrapper="span"

@@ -1,5 +1,5 @@
 
-https://pradul-p.github.io/AAKRITI/
+https://pradul-p.github.io/my-web/
 
 
 
