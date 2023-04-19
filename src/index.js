@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Pro from "./components/projectInfo";
+import About from "./components/About";
 
 import {
   createBrowserRouter,
@@ -19,6 +21,15 @@ const router = createBrowserRouter([
 
     path: "/my-web",
     element:<App/>,
+  },
+  {
+
+    path: "/projectInfo",
+    element:<Pro/>,
+  }, {
+
+    path: "/about",
+    element:<About/>,
   },
  
   

@@ -53,31 +53,53 @@ const Banner = () => {
           viewport={{once:false, amount:0.7}}
           className="flex max-w-max gap-x-6 items-center m-5 mb-12 mx-auto  text-center"
         >
-           <button  
+           {/* <button  
         className='btn btn-sm'
         type="button"
         onClick={(e) => {
           e.preventDefault();
           window.location.href='http://google.com';
           }}
-          > REGISTER</button>
+          > contact</button> */}
 <a
  href={require("../AAKRITI.pdf")}
   className="text-gradient btn-link lg:item-center text-center uppercase"
   onClick={(e) => {
     e.preventDefault();
     const link = document.createElement("a");
-    link.download = "AAKRITI BROCHURE.pdf";
+    link.download = "pradul_cv.pdf";
     link.href = e.target.href;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   }}
 >
-  brochure
+  download cv
 </a>
+<a href="#contact" className="text-gradient btn-link">
+                contact 
+              </a>
 
         </motion.div>
+        <motion.div 
+  variants={fadeIn('left',0.5)}
+  initial='hidden'
+  whileInView={'show'}
+  viewport={{once:false,amount:0.7}}
+  className="flex max-w-max gap-x-6 items-center m-5 mb-12 mx-auto  text-center"
+>
+  <a href="https://github.com/PRADUL-P">
+    <FaGithub />
+  </a>
+  <a href="https://www.linkedin.com/in/pradul/">
+    <FaLinkedin />
+  </a>
+  <a href="https://www.instagram.com/pradul_prashandan/">
+    <FaInstagram />
+  </a>
+</motion.div>
+
+
       </div>
     </div>
   </div>

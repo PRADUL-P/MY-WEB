@@ -66,13 +66,14 @@ const ExperienceCard = ({ day1 }) => {
 const Experience = () => {
   return (
     <>
+    <h1 className="text-2xl font-bold mb-4 text-center">Experience</h1>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
-          day 1
+        <p className={`${styles.sectionSubText} `}>
+          
         </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-         events
-        </h2>
+        {/* <h2 className={`${styles.sectionHeadText} text-center`}>
+        
+        </h2> */}
       </motion.div>
 
       <div className='mt-20 flex flex-col'>

@@ -13,22 +13,20 @@ const Tabs = () => {
     <div id='Events'>
       <div className="flex justify-center">
         <button
-          className={`px-10 m-2 py-2 rounded-r btn btn-sm ${
+          className={`px-10 m-2 py-2 rounded btn btn-sm ${
             activeTab === 0 ? "btn btn-lg" : "bg-gray-400"
           }`}
           onClick={() => handleTabClick(0)}
         >
-          29-04-23 <br/>
-          MONDAY
+          experience
         </button>
         <button
-          className={`px-10 m-3 py-2 rounded-l btn btn-sm ${
+          className={`px-10 m-3 py-2 rounded btn btn-sm ${
             activeTab === 1 ? "btn btn-lg" : "bg-gray-400"
           }`}
           onClick={() => handleTabClick(1)}
         >
-          30-04-23 <br/>
-          tuesday
+          education
         </button>
       </div>
       <div className="flex flex-row">

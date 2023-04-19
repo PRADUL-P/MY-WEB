@@ -9,18 +9,18 @@ const Header = () => {
       <div className='flex justify-between items-center'>
       
        <Link to='/'>
-          <h1 className='h-[60px] font-monton uppercase'>aakriti</h1>
+          <h1 className='h-[60px] font-monton uppercase'>pradul</h1>
           {/* <img className='h-[50px]' src={Logo} alt=''/> */}
         </Link>
         {/* <Link to=''> */}
-        <button  
+        {/* <button  
         className='btn btn-sm'
         type="button"
         onClick={(e) => {
           e.preventDefault();
           window.location.href='http://google.com';
           }}
-          > REGISTER</button>
+          > REGISTER</button> */}
         {/* </Link> */}
         
       </div>

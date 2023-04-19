@@ -68,8 +68,9 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
+    <h1 text-2xl font-bold mb-4 h1>projects</h1>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>IN ASSOCIATED WITH</p>
+        {/* <p className={`${styles.sectionSubText} `}>IN ASSOCIATED WITH</p> */}
         {/* <h2 className={`${styles.sectionHeadText}`}></h2> */}
       </motion.div>
 
