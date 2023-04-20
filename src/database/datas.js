@@ -2,6 +2,10 @@
 import web from "../assets/Web.png";
 // import sattva from "../assets/stm.png";
 // import iedc from "../assets/iedc.png";
+import civilenggImage from "../assets/Web.png";
+import webdesignImage from "../assets/stm.png";
+import allImage from "../assets/projects/WebDC.png";
+
 
 const Fday = [
   {
@@ -92,30 +96,30 @@ const Sday = [
  
 ];
 
-const projects = [
-  {
-    name: "web",
-    image: web,
-    source_code_link: "#",
-  },
-  {
-    name: "web2",
-    image: web,
-    source_code_link: "#",
-  }, {
-    name: "web4",
-    image: web,
-    source_code_link: "#",
-  }, {
-    name: "web3",
-    image: web,
-    source_code_link: "#",
-  }, {
-    name: "web3",
-    image: web,
-    source_code_link: "#",
-  },
-];
+// const projects = [
+//   {
+//     name: "web",
+//     image: web,
+//     source_code_link: "#",
+//   },
+//   {
+//     name: "web2",
+//     image: web,
+//     source_code_link: "#",
+//   }, {
+//     name: "web4",
+//     image: web,
+//     source_code_link: "#",
+//   }, {
+//     name: "web3",
+//     image: web,
+//     source_code_link: "#",
+//   }, {
+//     name: "web3",
+//     image: web,
+//     source_code_link: "#",
+//   },
+// ];
 
 const contact = [
   {
@@ -184,6 +188,46 @@ const services = [
     pastProjects: 12,
     amount: 5000,
   },
+];
+
+
+const projects = [
+  { id: 1, title: "Project 1", category: "civilengg",imgSrc: civilenggImage,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus quam vitae congue. Pellentesque auctor, massa sit amet scelerisque mattis, nunc dui porta nulla, in tincidunt metus urna vel risus.",
+    hostedPage:"https://pradul-p.github.io/",},
+  { id: 2, title: "Project 2", category: "webdesign",imgSrc: civilenggImage,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus quam vitae congue. Pellentesque auctor, massa sit amet scelerisque mattis, nunc dui porta nulla, in tincidunt metus urna vel risus.",
+      hostedPage:"/projectInfo",},
+  { id: 3, title: "Project 3", category: "civilengg",imgSrc: civilenggImage,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus quam vitae congue. Pellentesque auctor, massa sit amet scelerisque mattis, nunc dui porta nulla, in tincidunt metus urna vel risus.",
+    },
+  { id: 4, title: "Project 4", category: "webdesign",imgSrc: allImage,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus quam vitae congue. Pellentesque auctor, massa sit amet scelerisque mattis, nunc dui porta nulla, in tincidunt metus urna vel risus.",
+    },
+  { id: 5, title: "Project 5", category: "civilengg" ,imgSrc: civilenggImage,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus quam vitae congue. Pellentesque auctor, massa sit amet scelerisque mattis, nunc dui porta nulla, in tincidunt metus urna vel risus.",
+   },
+  { id: 6, title: "Project 6", category: "webdesign" ,imgSrc: allImage,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus quam vitae congue. Pellentesque auctor, massa sit amet scelerisque mattis, nunc dui porta nulla, in tincidunt metus urna vel risus.",
+   },
+  { id: 7, title: "Project 7", category: "all" ,imgSrc: allImage,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus quam vitae congue. Pellentesque auctor, massa sit amet scelerisque mattis, nunc dui porta nulla, in tincidunt metus urna vel risus.",
+   },
+  { id: 8, title: "Project 8", category: "all",imgSrc: civilenggImage,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus quam vitae congue. Pellentesque auctor, massa sit amet scelerisque mattis, nunc dui porta nulla, in tincidunt metus urna vel risus.",
+    },
+  { id: 9, title: "Project 9", category: "all" ,imgSrc: civilenggImage,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus quam vitae congue. Pellentesque auctor, massa sit amet scelerisque mattis, nunc dui porta nulla, in tincidunt metus urna vel risus.",
+   },
 ];
 
 export { Fday,Sday, projects,contact,services };

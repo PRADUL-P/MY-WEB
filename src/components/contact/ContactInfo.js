@@ -57,7 +57,7 @@ const ContactInfo = () => {
       >
        <FontAwesomeIcon icon={faWhatsapp}  beat fade 
           className={`text-green-400 text-3xl transition-transform ${
-            isHovered ? "animate-pulse text-gray-50" : "animate-bounce"
+            isHovered ? "animate-pulse text-white" : "animate-bounce"
           }`}
           onClick={whatsappFunction}
         />
@@ -73,7 +73,7 @@ const ContactInfo = () => {
       >
         <FaEnvelope
           className={`text-red-500 text-3xl transition-transform ${
-            isHovered ? "animate-spin text-gray-50" : " animate-pulse"
+            isHovered ? "animate-spin text-white" : " animate-pulse"
           }`}
           onClick={emailFunction}
         />

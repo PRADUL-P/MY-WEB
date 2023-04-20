@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
-import { fadeIn } from '../variants';
+import { fadeIn } from '../../variants';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Modal from 'react-modal';

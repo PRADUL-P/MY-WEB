@@ -7,7 +7,7 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Venue from './components/venue';
 import Work from './components/Work';
-import Contact from './components/Contact';
+import Contact from './components/contact/Contact';
 import Footer from './components/footer';
 import Events from './components/events';
 import Portfolio from './components/portfolio';
