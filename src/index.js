@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Pro from "./components/projectInfo";
+import Pro from "./components/portfolio";
 import About from "./components/About";
 
 import {
@@ -10,6 +10,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Test from './components/test';
+import Contact from './components/contact';
 
 
 
@@ -26,16 +27,17 @@ const router = createBrowserRouter([
   {
 
     path: "/portfolio",
-    element:<About/>,
+    element:<Pro/>,
   },
   //  {
 
     // path: "/about",
     // element:<About/>,
-  // },{
-  //   path:"/test",
-  //   element:<Test/>
-  // }
+  // },
+  {
+    path:"/Contact",
+    element:<Contact/>
+  }
  
   
 ]);

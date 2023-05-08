@@ -9,7 +9,11 @@ const Header = () => {
       <div className='flex justify-between items-center'>
       
        <Link to='/'>
-          <h1 className='h-[60px] font-monton uppercase'>pradul</h1>
+          <h1 className='h-[60px] font-monton uppercase'>pradul p</h1>
+          {/* <img className='h-[50px]' src={Logo} alt=''/> */}
+        </Link>
+        <Link to='/Contact'>
+          <h1 className='h-[60px] font-primary uppercase'>Contact</h1>
           {/* <img className='h-[50px]' src={Logo} alt=''/> */}
         </Link>
         {/* <Link to=''> */}
@@ -22,7 +26,21 @@ const Header = () => {
           }}
           > REGISTER</button> */}
         {/* </Link> */}
-        
+        {/* <a
+ href={require("../resume.pdf")}
+  className="text-gradient btn-link lg:item-center text-center uppercase"
+  onClick={(e) => {
+    e.preventDefault();
+    const link = document.createElement("a");
+    link.download = "pradul_cv.pdf";
+    link.href = e.target.href;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }}
+>
+  download cv
+</a> */}
       </div>
 
     </div>
