@@ -10,7 +10,7 @@ import Work from './components/Work';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer';
 import Events from './components/events';
-import Portfolio from './components/portfolio';
+import Portfolio from './components/projects';
 import Services from './components/services';
 import Navbar from './components/Navbar';
 

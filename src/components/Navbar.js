@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-scroll";
+
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
+
 import Logo from '../assets/image.png'
 
 function Navbar() {
@@ -15,14 +18,14 @@ function Navbar() {
     <nav className="fixed right-0 top-0 w-full">
       <div className="flex items-center justify-between h-16 px-6 bg-gray-800 bg-opacity-60 backdrop-blur-lg">
         <div>
-          <Link to='/'>
+          <ScrollLink to='/'>
            
              activeClass="active"
         smooth={true}
         spy={true}
-        offset={-200} <h1 className='h-[60px] font-monton uppercase mt-7'>pradul</h1>
+        offset={-200} <h1 className='h-[60px] font-nme uppercase mt-7'>pradul</h1>
             {/* <img className='h-[50px]' src={Logo} alt=''/> */}
-          </Link>
+          </ScrollLink>
         </div>
       </div>
 
@@ -42,7 +45,7 @@ function Navbar() {
         }`}
       >
         <div className="p-5 space-y-4 mt-20">
-          <Link
+          <ScrollLink
             to="home"
          
            activeClass="active"
@@ -52,8 +55,8 @@ function Navbar() {
             onClick={toggleMenu}
           >
             Home
-          </Link>
-          <Link
+          </ScrollLink>
+          <ScrollLink
             to="about"
         
           activeClass="active"
@@ -63,9 +66,9 @@ function Navbar() {
             onClick={toggleMenu}
           >
             About
-          </Link>
-          <Link
-            to="portfolio"
+          </ScrollLink>
+          <RouterLink
+            to="/portfolio"
     
       activeClass="active"
         smooth={true}
@@ -74,8 +77,8 @@ function Navbar() {
             onClick={toggleMenu}
           >
             Portfolio
-          </Link>
-          <Link
+          </RouterLink>
+          <ScrollLink
             to="services"
      
        activeClass="active"
@@ -85,19 +88,8 @@ function Navbar() {
             onClick={toggleMenu}
           >
             Services
-          </Link>
-          <Link
-            to="contact"
-      
-        activeClass="active"
-        smooth={true}
-        spy={true}
-        offset={-200}      className="block text-white hover:text-gray-300 px-3 py-2 font-medium"
-            onClick={toggleMenu}
-          >
-            Contact
-          </Link>
-          <Link
+          </ScrollLink>
+          <ScrollLink
             to="projects"
      
        activeClass="active"
@@ -107,7 +99,20 @@ function Navbar() {
             onClick={toggleMenu}
           >
             Projects
-          </Link>
+          </ScrollLink>
+          <ScrollLink
+            to="contact"
+      
+        activeClass="active"
+        smooth={true}
+        spy={true}
+        offset={-200}      className="block text-white hover:text-gray-300 px-3 py-2 font-medium"
+            onClick={toggleMenu}
+          >
+            Contact
+          </ScrollLink>
+ 
+      
         </div>
       </div>
     </nav>

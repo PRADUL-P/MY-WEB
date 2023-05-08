@@ -9,6 +9,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Test from './components/test';
 
 
 
@@ -24,13 +25,17 @@ const router = createBrowserRouter([
   },
   {
 
-    path: "/projectInfo",
-    element:<Pro/>,
-  }, {
-
-    path: "/about",
+    path: "/portfolio",
     element:<About/>,
   },
+  //  {
+
+    // path: "/about",
+    // element:<About/>,
+  // },{
+  //   path:"/test",
+  //   element:<Test/>
+  // }
  
   
 ]);

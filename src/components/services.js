@@ -5,57 +5,7 @@ import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const services = [
-    {
-        id: 1,
-        title: 'Web Design',
-        description: 'We design beautiful and responsive websites tailored to your business needs.',
-        amount: '$1000',
-        projects: '5+',
-        icon: faDesktop
-      },
-      {
-        id: 2,
-        title: 'Web Development',
-        description: 'We develop and maintain robust web applications using cutting-edge technologies.',
-        amount: '$1500',
-        projects: '10+',
-        icon: faGlobe
-      },
-      {
-        id: 3,
-        title: '2D Drafting',
-        description: 'We create accurate 2D drawings and blueprints for engineering and construction projects.',
-        amount: '$800',
-        projects: '3+',
-        icon: faDraftingCompass
-      },
-      {
-        id: 4,
-        title: '3D Modeling',
-        description: 'We produce high-quality 3D models and animations for architecture, product design, and more.',
-        amount: '$1200',
-        projects: '7+',
-        icon: faCube
-      },
-      {
-        id: 5,
-        title: 'UI/UX Design',
-        description: 'We design intuitive and engaging user interfaces for web and mobile applications.',
-        amount: '$900',
-        projects: '4+',
-        icon: faMobileAlt
-      },
-      {
-        id: 6,
-        title: 'Video/Photo Editing',
-        description: 'We edit and enhance videos and photos to create stunning visual content for your business.',
-        amount: '$500',
-        projects: '2+',
-        icon: faImage
-      }
-];
-
+import { services } from "../database/datas";
 function Service({ service, onClick }) {
   return (
     <motion.div 
@@ -136,7 +86,7 @@ return (
 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div className="py-12">
 <div className="max-w-2xl mx-auto">
-<h2 className="text-3xl font-extrabold text-gray-900">Our Services</h2>
+<h2 className="text-3xl font-extrabold text-slate-100 uppercase">my Services</h2>
 <p className="mt-4 text-lg text-gray-500">We offer a wide range of services to help grow your business.</p>
 <div className="mt-10">
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

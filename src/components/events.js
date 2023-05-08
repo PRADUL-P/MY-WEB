@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Day1 from "./day1";
-import Day2 from "./day2";
+import Experience from "./experience";
+import Education from "./education";
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -30,8 +30,8 @@ const Tabs = () => {
         </button>
       </div>
       <div className="flex flex-row">
-        {activeTab === 0 && <Day1 />}
-        {activeTab === 1 && <Day2 />}
+        {activeTab === 0 && <Experience />}
+        {activeTab === 1 && <Education />}
       </div>
     </div>
   );

@@ -6,7 +6,9 @@ module.exports = {
       primary: 'Orbitron',
       secondary: 'Rajdhani',
       tertiary: 'Aldrich',
-      monton:'Monoton'
+      monton:'Monoton',
+      nme:'Tilt Prism',
+      Nabla:'Nabla'
     
     },
     container: {

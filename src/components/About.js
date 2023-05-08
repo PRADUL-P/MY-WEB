@@ -12,6 +12,11 @@ import Skills from './skills';
 import Interest from './interest';
 
 const About = () => {
+  const [showFull, setShowFull] = useState(false);
+
+  const toggleShowFull = () => {
+    setShowFull(!showFull);
+  };
   const[ref,inView]=useInView({
     threshold:0.5,
    })
@@ -56,11 +61,18 @@ const About = () => {
     className='flex-1'>  
           <h2 className='h2 text-accent'>About <span className='text-white'>me</span> </h2>
           <h3 className='h3 mb-4'></h3>
-          <p className=''>Lorem Ipsum has been the industry's standard dummy text ever since the 15
-          00s, when an unknown printer took a galley of type and scrambled it to make a type specimen b
-          ook. It has survived not only five centuries,</p>
-        
-        </motion.div>
+          {showFull
+          ? `I am a Civil Engineering student at St. Thomas College of Engineering and Technology, Kannur. My passion for learning and commitment to excellence have enabled me to gain a strong foundation in civil engineering, and I am always seeking new challenges to further my skills. In addition to my formal education, I have self-taught critical tools such as AutoCAD, Revit, and web development. These skills have enabled me to effectively communicate my ideas and work productively on projects. I value collaboration and am always willing to work closely with others to reach shared goals.
+
+          My web development skills bring a tech-savvy and creative approach to projects, and I am always exploring new ways to leverage technology to drive results. Whether working on a complex engineering project or a cutting-edge web development project, I am dedicated to delivering high-quality work that exceeds expectations. I am eager to bring my passion, knowledge, and skills to new challenges and opportunities.`
+          : `I am a Civil Engineering student at St. Thomas College of Engineering and Technology, Kannur. My passion for learning and commitment to excellence have enabled me to gain a strong foundation in civil engineering, and I am always seeking new challenges to further my skills. In addition to my formal education, I have self-taught critical tools such as AutoCAD, Revit, and web development. These skills have enabled me to effectively communicate my ideas and work productively on projects. ${
+              !showFull ? '...' : ''
+            }`}
+        <button
+          className='text-accent hover:text-accent-light text-gradient'
+          onClick={toggleShowFull}>
+          {showFull ? 'Read less' : 'Read more'}
+        </button> </motion.div>
       <div className='flex flex-col gap-y-10 lg:flex-row lg:mt-10 lg:gap-x-20 lg:gap-y-0 my-10'> 
      
        <Tilt className="xs:w-[20px] w-1/3" >

@@ -17,7 +17,7 @@ const Banner = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{once:false, amount:0.7}}
-          className="text-[55px] leading-[0.8] lg:text-[110px] m-5 font-monton uppercase"
+          className="text-[55px] leading-[0.8] lg:text-[110px] m-5 font-nme uppercase"
         >
           pradul p
         </motion.h1>
@@ -32,7 +32,7 @@ const Banner = () => {
           <TypeAnimation
             sequence={["civil engineer", 2000, "web developer", 2000]}
             speed={50}
-            className="text-accent"
+            className="text-accent font-Nabla"
             wrapper="span"
             repeat={Infinity}
           />
@@ -62,7 +62,7 @@ const Banner = () => {
           }}
           > contact</button> */}
 <a
- href={require("../AAKRITI.pdf")}
+ href={require("../resume.pdf")}
   className="text-gradient btn-link lg:item-center text-center uppercase"
   onClick={(e) => {
     e.preventDefault();
@@ -88,13 +88,13 @@ const Banner = () => {
   viewport={{once:false,amount:0.7}}
   className="flex max-w-max gap-x-6 items-center m-5 mb-12 mx-auto  text-center"
 >
-  <a href="https://github.com/PRADUL-P">
+  <a href="https://github.com/PRADUL-P"  target="_blank" rel="noopener noreferrer"> 
     <FaGithub />
   </a>
-  <a href="https://www.linkedin.com/in/pradul/">
+  <a href="https://www.linkedin.com/in/pradul/" target="_blank" rel="noopener noreferrer">
     <FaLinkedin />
   </a>
-  <a href="https://www.instagram.com/pradul_prashandan/">
+  <a href="https://www.instagram.com/pradul_prashandan/" target="_blank" rel="noopener noreferrer">
     <FaInstagram />
   </a>
 </motion.div>
