@@ -17,7 +17,7 @@ Modal.setAppElement('#root');
 
 const ProjectModal = ({ project, isOpen, onRequestClose }) => {
   return (
-    <Modal isOpen={isOpen} onRequestClose={onRequestClose} className="modal">
+    <Modal isOpen={isOpen} onRequestClose={onRequestClose} className="modal ">
       <div className="modal-content bg-slate-800 rounded-lg shadow-lg p-6 max-h-screen overflow-y-auto">
         <button className="modal-close absolute top-0 right-0 mt-4 mr-4 text-gray-500" onClick={onRequestClose}>
           <FaTimes className="w-6 h-6" />
@@ -43,6 +43,9 @@ const ProjectModal = ({ project, isOpen, onRequestClose }) => {
         <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-block mt-4">
           View project <FaExternalLinkAlt className="inline-block ml-1" />
         </a>
+        <button className=" bottom-0 right-0 mt-4 mx-15 inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:ml-3 sm:w-auto sm:text-sm" onClick={onRequestClose}>
+  Close
+</button>
       </div>
     </Modal>
   );
