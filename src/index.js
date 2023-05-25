@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import Test from './components/test';
 import Contact from './components/contact';
+import Model from './components/model';
 
 
 
@@ -29,11 +30,11 @@ const router = createBrowserRouter([
     path: "/portfolio",
     element:<Pro/>,
   },
-  //  {
+   {
 
-    // path: "/about",
-    // element:<About/>,
-  // },
+    path: "/model",
+    element:<Model/>,
+  },
   {
     path:"/Contact",
     element:<Contact/>

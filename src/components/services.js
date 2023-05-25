@@ -87,7 +87,7 @@ return (
 <div className="py-12">
 <div className="max-w-2xl mx-auto">
 <h2 className="text-3xl font-extrabold text-slate-100 uppercase">my Services</h2>
-<p className="mt-4 text-lg text-gray-500">We offer a wide range of services to help grow your business.</p>
+{/* <p className="mt-4 text-lg text-slate-300">We offer a wide range of services to help grow your business.</p> */}
 <div className="mt-10">
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 {services.map((service) => (

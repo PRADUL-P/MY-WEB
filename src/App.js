@@ -18,9 +18,10 @@ const App = () => {
  
   
   return (
-    <div className='bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-sky-400 to-indigo-900 bg-no-repeat bg-cover overflow-hidden'>
+     <div className='bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-sky-400 to-indigo-900 bg-no-repeat bg-cover overflow-hidden'>
+   
       <Navbar/>
-      <Header />
+      {/* <Header /> */}
       <Banner /> 
       {/* <Nav /> */}
     

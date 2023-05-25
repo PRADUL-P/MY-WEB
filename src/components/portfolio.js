@@ -99,7 +99,42 @@ const portfolio = () => {
       <Education /></div>
      
       </motion.div>
-      <a
+      <motion.div
+          variants={fadeIn('up', 0.7)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{once:false, amount:0.7}}
+          className="flex max-w-max gap-x-6 items-center m-5 mb-12 mx-auto  text-center"
+        >
+           {/* <button  
+        className='btn btn-sm'
+        type="button"
+        onClick={(e) => {
+          e.preventDefault();
+          window.location.href='http://google.com';
+          }}
+          > contact</button> */}
+<a
+ href={require("../resume.pdf")}
+  className="text-gradient btn-link lg:item-center text-center uppercase"
+  onClick={(e) => {
+    e.preventDefault();
+    const link = document.createElement("a");
+    link.download = "pradul_cv.pdf";
+    link.href = e.target.href;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }}
+>
+  download cv
+</a>
+{/* <a href="#contact" className="text-gradient btn-link">
+                contact 
+              </a> */}
+
+        </motion.div>
+      {/* <a
  href={require("../resume.pdf")}
   className="btn  flex justify-center uppercase p-8 my-10 mx-96 py-10"
   onClick={(e) => {
@@ -113,7 +148,7 @@ const portfolio = () => {
   }}
 >
   download cv
-</a>
+</a> */}
 <Footer/>
     </div>
   )

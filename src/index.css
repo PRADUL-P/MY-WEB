@@ -29,8 +29,10 @@
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
 
-.gradient,
-.active {
+
+/* .active, */
+.gradient
+{
   background: linear-gradient(
     92.23deg,
     #ffbf40 21.43%,
@@ -41,7 +43,7 @@
 }
 
 .active {
-  color: #fff;
+  color: #e0f161;
   padding: 1rem;
   border-radius: 100%;
 }
