@@ -11,7 +11,7 @@ const HeroPage = () => {
       <div className="container mx-auto px-4 py-12 md:py-24">
         <div className="flex flex-col md:flex-row items-center justify-center text-center">
           <div className="md:w-1/2">
-            <motion.div 
+            {/* <motion.div 
              variants={fadeIn('down', 0.3)}
              initial="hidden"
              whileInView="show"
@@ -25,7 +25,7 @@ const HeroPage = () => {
                 />
          
               </div>
-            </motion.div>
+            </motion.div> */}
             <div className="flex items-center gap-y-8 lg:flex-row lg:items-center">
               <div className="flex-1 font-secondary lg:text-center items-center mt-12">
                 <motion.h1
@@ -112,7 +112,7 @@ const HeroPage = () => {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 hidden md:flex items-center justify-center">
+          {/* <div className="md:w-1/2 hidden md:flex items-center justify-center">
           <motion.div 
              variants={fadeIn('left', 0.3)}
              initial="hidden"
@@ -139,17 +139,19 @@ const HeroPage = () => {
            
             </div>   */}
              
-          </div>
+          {/* </div> */} 
           <motion.div
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1.5, duration: 0.5 }}
-                className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-              >
-                <a href="#about">
-                  <FaChevronDown className="text-white text-4xl animate-bounce" />
-                </a>
-              </motion.div>
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 1.5, duration: 0.5 }}
+  className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
+  style={{ transform: "translateX(-50%)" }} // Added style property
+>
+  <a href="#about">
+    <FaChevronDown className="text-white text-4xl animate-bounce" />
+  </a>
+</motion.div>
+
         </div>
       </div>
     </div>
