@@ -13,7 +13,7 @@ import Events from './components/events';
 import Portfolio from './components/projects';
 import Services from './components/services';
 import Navbar from './components/Navbar';
-
+import MoveToTop from './components/moveToTop';
 const App = () => {
  
   
@@ -29,6 +29,7 @@ const App = () => {
       <Services/>
       {/* <Events/> */}
       {/* <Venue/> */}
+      <MoveToTop/>
       {/* <Work /> */}
       <Portfolio/>
      <Contact />

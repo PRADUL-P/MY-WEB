@@ -7,11 +7,16 @@ import { fadeIn } from '../variants';
 
 const HeroPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-purple-500 via-pink-500 to-red-500">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-purple-500 via-pink-500 to-red-500" id='home'>
       <div className="container mx-auto px-4 py-12 md:py-24">
         <div className="flex flex-col md:flex-row items-center justify-center text-center">
           <div className="md:w-1/2">
-            <div className="md:hidden flex items-center justify-center mb-8">
+            <motion.div 
+             variants={fadeIn('down', 0.3)}
+             initial="hidden"
+             whileInView="show"
+             viewport={{ once: false, amount: 0.7 }}
+            className="md:hidden flex items-center justify-center mb-8">
               <div className="relative">
                 <img
                   src={Image}
@@ -20,7 +25,7 @@ const HeroPage = () => {
                 />
          
               </div>
-            </div>
+            </motion.div>
             <div className="flex items-center gap-y-8 lg:flex-row lg:items-center">
               <div className="flex-1 font-secondary lg:text-center items-center mt-12">
                 <motion.h1
@@ -108,18 +113,34 @@ const HeroPage = () => {
             </div>
           </div>
           <div className="md:w-1/2 hidden md:flex items-center justify-center">
-            <div className="relative">
+          <motion.div 
+             variants={fadeIn('left', 0.3)}
+             initial="hidden"
+             whileInView="show"
+             viewport={{ once: false, amount: 0.7 }}
+            className="flex items-center justify-center mb-8">
+              <div className="relative">
+                <img
+                  src={Image}
+                  alt="Hero"
+                  className="w-56 h-56 md:w-72 md:h-72  blend-image"
+                />
+         
+              </div>
+            </motion.div>
+            {/* <div className="relative">
               <img
                 src={Image}
                 alt="Hero"
                 className="w-56 h-56 md:w-72 md:h-72 blend-image"
                 // className="w-56 h-56 md:w-72 md:h-72 rounded-full shadow-lg blend-image"
               />
-              {/* <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-red-500 opacity-75"></div> */}
+              <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-red-500 opacity-75"></div> 
            
-            </div>  
+            </div>   */}
              
-          </div><motion.div
+          </div>
+          <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.5, duration: 0.5 }}

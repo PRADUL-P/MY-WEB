@@ -15,6 +15,7 @@ import Experience from "./experience";
 import Education from "./education";
 import Header from './Header';
 import Footer from './footer';
+import MoveToTop from './moveToTop';
 const portfolio = () => {
    // Calculate age based on date of birth
    const birthdate = new Date('2002-09-04');
@@ -97,7 +98,7 @@ const portfolio = () => {
       <Experience /></div>
       <div className='my-14 py-10'>
       <Education /></div>
-     
+      <MoveToTop/>
       </motion.div>
       <motion.div
           variants={fadeIn('up', 0.7)}
