@@ -5,7 +5,7 @@ import { projects } from "../database/datas";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-scroll";
-
+import ReactPlayer from 'react-player';
 import Modal from 'react-modal';
 import { FaExternalLinkAlt, FaTimes } from 'react-icons/fa';
 import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
@@ -14,7 +14,9 @@ import "swiper/swiper-bundle.css";
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 Modal.setAppElement('#root');
-
+function isYouTubeVideoLink(link) {
+  return link.includes('youtube.com') || link.includes('youtu.be');
+}
 const ProjectModal = ({ project, isOpen, onRequestClose }) => {
   return (
     <Modal isOpen={isOpen} onRequestClose={onRequestClose} className="modal ">
@@ -37,6 +39,28 @@ const ProjectModal = ({ project, isOpen, onRequestClose }) => {
               <img src={image} alt={project.title} className="w-full" />
             </SwiperSlide>
           ))}
+           <SwiperSlide >
+           {isYouTubeVideoLink(project.link) ? (
+    <ReactPlayer url={project.link} 
+    controls
+    width="100%"
+  heigth=""
+    playing={false} // Disable auto-playing
+    config={{
+      youtube: {
+        playerVars: {
+          autoplay: 0, // Set autoplay to 0 to disable auto-playing
+          modestbranding: 1,
+          fs: 1, // Enable full-screen button
+        },
+      },
+    }}
+  />
+  ) : (
+    <iframe src={project.link} title="Website" class="fixed h-screen w-screen" />
+  )}
+ 
+  </SwiperSlide>
         </Swiper>
         <h2 className="text-2xl font-bold mt-4">{project.title}</h2>
         <p className="mt-4 ">{project.description}</p>

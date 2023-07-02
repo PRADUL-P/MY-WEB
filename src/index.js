@@ -1,50 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Pro from "./components/portfolio";
 import About from "./components/About";
-
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Test from './components/test';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ErrorPage from './components/ErrorPage';
 import Contact from './components/contact';
 import Model from './components/model';
 
-
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element:<App/>,
-  },
-  {
-
-    path: "/my-web",
-    element:<App/>,
-  },
-  {
-
-    path: "/portfolio",
-    element:<Pro/>,
-  },
-   {
-
-    path: "/model",
-    element:<Model/>,
-  },
-  {
-    path:"/Contact",
-    element:<Contact/>
-  }
- 
-  
-]);
-
- const root = ReactDOM.createRoot(document.getElementById('root'));
- root.render(
-  <RouterProvider router={router} />
-
-   );
+ReactDOM.render(
+  <Router>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/my-web" element={<App />} />
+      <Route path="/portfolio" element={<Pro />} />
+      <Route path="/model" element={<Model />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<ErrorPage />} />
+    </Routes>
+  </Router>,
+  document.getElementById('root')
+);

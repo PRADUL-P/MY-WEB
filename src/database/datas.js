@@ -9,6 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight ,faGlobe,faImage,faDesktop,faCode,faDraftingCompass,faCube,faMobileAlt} from '@fortawesome/free-solid-svg-icons';
 import  H11  from "../assets/projects/h1.1.png";
 import  H12  from "../assets/projects/h1.2.png";
+import  H13  from "../assets/projects/h1.3.png";
+import  H14  from "../assets/projects/h1.4.png";
 import H21  from "../assets/projects/h2.1.png";
 import  H22  from "../assets/projects/h2.2.png";
 import  H31  from "../assets/projects/h3.1.png";
@@ -66,10 +68,31 @@ const Fday = [
         paragraph: "I have recently completed a five-day internship from 4 September 2022 to 8 September 2022, where I had the opportunity to undertake a task related to traffic data collection. The task was part of the Development Plan for the selected roads leading to Muzhappilangad Beach In Kannur district carrying out Traffic Surveys and Data Compilation.I was responsible for collecting traffic data by conducting surveys on the selected roads.The report included crucial information such as traffic volume, vehicle types, peak hours, and other relevant data that would aid in the development plan.Overall, the internship was an excellent learning experience that allowed me to gain valuable skills and knowledge in traffic data collection and analysis. I look forward to utilizing this experience in my future endeavors",
         date: "",
        },
-      
-
+       
     ],
   },
+  {
+    title: "INTERN",
+    position: "KIIDC internship",
+    icon:civilenggImage,
+    //  fee: "fui",
+    iconBg: "#383E56",
+    years: "MAY 2023 - 5 DAYS",
+    
+   
+    points: [
+      // {
+      //   header: "",
+      //   paragraph: "",
+      //   date: "",
+      // },
+      {
+        header: "",
+        paragraph: "During my internship at KIIDC, I gained valuable hands-on experience in civil engineering and project management. I actively participated in various projects, applying my academic knowledge to real-world scenarios and developing practical skills in construction techniques, quality control, and project coordination. I collaborated with a diverse team of professionals, strengthening my communication and teamwork abilities. Through overcoming challenges and navigating unexpected obstacles, I honed my problem-solving and adaptability skills. This internship enhanced my understanding of professional ethics, safety protocols, and industry standards. Overall, my internship at KIIDC has been a rewarding experience that has equipped me with the necessary skills and knowledge to thrive as a civil engineer.",
+        date: "",
+       },],
+      },
+
   // {
   //   title: "NAME",
   //   position: ".....",
@@ -243,11 +266,11 @@ const services = [
 ];
 
 const projects = [
-  { id: 1, title: "HOME1",link: 'https://youtu.be/jggHA0tyi4I',  category: "civilengg",image: H11,
+  { id: 1, title: "HOME1",link: 'https://youtu.be/z5poRqL2FG0',  category: "civilengg",image: H11,
     description:
       "A Revit 3D house design project would involve using Autodesk Revit software to create a detailed, accurate, and interactive 3D model of a house. The project would begin with creating a conceptual design and developing the model using Revit's parametric tools, which allow for easy modification and updating of the design. The 3D model would be used to create detailed drawings, plans, elevations, and sections, as well as schedules and quantities, which can be used for construction documentation and cost estimates.This would also use Revit's built-in visualization and rendering tools,and enscape plugin to create realistic images and animations of the design, which would be useful for presentations and visualizing the design in context.",
       images: [
-        H12,
+        H12,H13,H14,
        
       ],
     },
@@ -258,7 +281,7 @@ const projects = [
         Ignite2,
        
       ],},
-  { id: 3, title: "HOME 2",link: 'https://youtu.be/jggHA0tyi4I',  category: "civilengg",image: H21,
+  { id: 3, title: "HOME 2",link: 'https://youtu.be/z5poRqL2FG0',  category: "civilengg",image: H21,
     description:
       "A Revit 3D house design project would involve using Autodesk Revit software to create a detailed, accurate, and interactive 3D model of a house. The project would begin with creating a conceptual design and developing the model using Revit's parametric tools, which allow for easy modification and updating of the design. The 3D model would be used to create detailed drawings, plans, elevations, and sections, as well as schedules and quantities, which can be used for construction documentation and cost estimates.This would also use Revit's built-in visualization and rendering tools,and enscape plugin to create realistic images and animations of the design, which would be useful for presentations and visualizing the design in context.",
       images: [
@@ -270,7 +293,7 @@ const projects = [
       hostedPage:"https://www.stthomaskannur.ac.in/stm2/IEDC/",images: [
        IEDC2
       ],},
-  { id: 5, title: "HOME 3",link: 'https://youtu.be/jggHA0tyi4I',  category: "civilengg" ,image: H31,
+  { id: 5, title: "HOME 3",link: 'https://youtu.be/z5poRqL2FG0',  category: "civilengg" ,image: H31,
     description:
     "A Revit 3D house design project would involve using Autodesk Revit software to create a detailed, accurate, and interactive 3D model of a house. The project would begin with creating a conceptual design and developing the model using Revit's parametric tools, which allow for easy modification and updating of the design. The 3D model would be used to create detailed drawings, plans, elevations, and sections, as well as schedules and quantities, which can be used for construction documentation and cost estimates.This would also use Revit's built-in visualization and rendering tools,and enscape plugin to create realistic images and animations of the design, which would be useful for presentations and visualizing the design in context.",
     images: [
